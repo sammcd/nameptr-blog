@@ -1,0 +1,4 @@
+exclude: 
+  - config.rb
+  - src
+  - Rakefile
