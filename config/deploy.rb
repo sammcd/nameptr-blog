@@ -22,8 +22,8 @@ namespace :deploy do
   
   desc "Compile Jekyll and Compass stuff"
   task :compile do
-    run "cd #{current_path} && rake compass:compile" 
-    run "cd #{current_path} && rake jekyll:compile"
+    run "cd #{release_path} && rake compass:compile" 
+    run "cd #{release_path} && rake jekyll:compile"
   end
 
 end
