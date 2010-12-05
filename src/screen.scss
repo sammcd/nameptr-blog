@@ -4,3 +4,101 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/utilities/text/replacement";
+@import "compass/css3/border-radius";
+
+$logo: "logo-small.png";
+$logo-blue: #0F58A7;
+$logo-grey: #989898;
+
+p {
+  margin: 10px 0px;
+}
+
+h1 {
+  width: 262px;
+  height: 38px;
+  margin: 20px 0px 15px 0px;
+  font-size: 2.0em;
+  @include replace-text($logo);
+  float: left;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1em;
+  color: #656564;
+  margin: 25px 0px 10px 0px;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 20px 0px -5px 0px;
+  color: $logo-blue;
+}
+
+body {
+  font-family: "HelveticaNeue-Roman", "Helvetica 55 Roman", Helvetica, Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 18pt;
+  padding-bottom: 20px;
+}
+
+
+
+div#center {
+  width: 600px;
+  margin: 0px auto;
+}
+
+div#navigation {
+  float: left;
+  margin: 22px 0px 0px 30px;
+  font-size: 1.3em;
+
+  padding: 3px;
+  
+  //border: 1px solid #7E7E7E;
+  //background-color: #9AB8EF;
+  //@include border-radius( 6px );
+}
+
+div#content {
+  background-color: white;
+  border-bottom: 3px solid $logo-grey;
+}
+
+div.sign_up {
+  background-color: #DFE4F6;
+  border: 1px solid #1E2C86;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  
+  h2 {
+    margin: 0px;
+    font-size: 1.3em;
+  }
+  
+  label {
+    margin-top: 20px;
+  }
+  
+  
+} 
+
+input.text {
+  font-size: 1.0em;
+  margin: 0px 5px;
+  width: 200px;
+}
+
+div#copyright {
+  margin-top: 50px;
+  font-size: 0.8em;
+  text-align: center;
+  
+}
+
+.clear {
+  clear: both;
+}

@@ -2,11 +2,40 @@
 <html> 
 <head> 
   <title>nameptr.com - a new domain registrar</title> 
- 
+  <link href="/stylesheets/screen.css" media="screen, projection, print" rel="stylesheet" type="text/css" /> 
+  
 </head> 
 <body>
 
-{{ content }}  
+
+<div id="center">
+  {{ post.title }}
+  <a href="/"><h1>nameptr.com</h1></a>
+  
+  <div class="clear"></div>
+
+  <div id="content">
+    {{ content }}  
+    
+    <div class="sign_up">
+      <h2>Sign up for an invite</h2>
+      <p>
+        Sign up and be one of the first people we contact when nameptr.com launches.
+        <form action="http://nameptr.createsend.com/t/r/s/nlujtk/" method="post" id="subForm">
+        <div>
+        <label for="nlujtk-nlujtk">Email:</label>
+        <input type="text" name="cm-nlujtk-nlujtk" id="nlujtk-nlujtk" />
+
+        <input type="submit" value="Subscribe" />
+        </div>
+        </form>
+      </p>
+    </div>
+    
+  </div>
+
+
+</div>
   
 </body>
 </html>
