@@ -2,3 +2,6 @@ exclude:
   - config.rb
   - src
   - Rakefile
+  - Capfile
+  - config
+  
